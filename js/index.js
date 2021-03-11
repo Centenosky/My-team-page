@@ -12,9 +12,9 @@ function personTemplate(person) {
     `
     <figure class="person-image">
         <img src="${person.image}" alt="">
-      </figure>
-      <h2 class="person-name">${person.name}</h2>
-      <div class="person-job">${person.job}</div>
+    </figure>
+    <h2 class="person-name">${person.name}</h2>
+    <div class="person-job">${person.job}</div>
     `
   )
 }
