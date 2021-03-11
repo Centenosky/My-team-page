@@ -24,7 +24,7 @@ header {
   display: inline-flex;
   flex-direction: column;
   max-width: 45%;
-  margin: 3vh 0 10vh 20%;
+  margin: 6vh 0 10vh 20%;
 }
 
 .about-title {
@@ -43,7 +43,7 @@ header {
 .team {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-row-gap: 100px;
+  grid-row-gap: 110px;
 }
 
 .person {
@@ -62,7 +62,7 @@ header {
 }
 
 .person-name {
-  margin: 0;
+  margin: .65em 0;
   font-family: 'Poppins', sans-serif, ui-system;
   font-weight: 600;
   font-size: 18px;
@@ -74,9 +74,9 @@ header {
   font-size: 12px;
   position: absolute;
   transform: rotate(90deg);
-  width: 50%;
-  left: 80%;
-  top: 14%;
+  width: 100%;
+  left: 55%;
+  top: 28%;
 }
 
 .type-1 {
@@ -97,7 +97,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 6vh;
-  margin-top: 150px;
+  margin-top: 175px;
 }
 
 footer span {
@@ -110,4 +110,141 @@ footer span a {
   text-decoration: none;
   color:#A9A9A9;
   font-weight: 600;
+}
+
+@media (max-width: 1080px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .about {
+    margin-left: 16%;
+  }
+}
+
+@media (max-width: 950px) {
+  .about {
+    margin: 5vh 0 8vh 13%;
+  }
+
+  .person {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 850px) {
+  .about {
+    margin-left: 8%;
+  }
+}
+
+@media (max-width: 768px) {
+  .principal-title {
+    margin: 4vh 0 1.5vh
+  }
+
+  .about {
+    max-width: 60%;
+    margin: 0 0 8vh;
+  }
+
+  .person {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 700px) {
+  .about{
+    max-width: 70%;
+  }
+
+  .team {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .person {
+    max-width: 80%;
+  }
+
+  .another-type-1 {
+    justify-self: baseline;
+    top: 0;
+  }
+
+  .another-type-2 {
+    top: 100px;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .about{
+    max-width: 78%;
+  }
+
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 520px) {
+  .about{
+    max-width: 90%;
+  }
+
+  footer {
+  margin-top: 130px;
+  }
+}
+
+@media (max-width: 480px) {
+  .principal-title {
+    margin: 3vh 0 1vh
+  }
+
+  .about{
+    max-width: 75%;
+    margin-bottom: 7vh;
+  }
+
+  .team {
+    grid-row-gap: 100px;
+  }
+
+  .about-details {
+    font-size: 14px;
+  }
+
+  .person-name {
+    font-size: 16px;
+    margin: .5em 0;
+  }
+  
+  .person-job {
+    top: 28%;
+    left: 57%;
+  }
+
+
+  footer {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 375px) {
+  .about {
+    max-width: 90%;
+  }
+
+  .person-job {
+    top: 26%;
+    left: 58%;
+  }
+}
+
+@media (max-width: 320px) {
+  .person-job {
+    top: 25%;
+    left: 59%;
+  }
 }
